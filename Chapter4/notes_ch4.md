@@ -27,17 +27,20 @@ print(ord('\n')) will result in 10 as \n is a byte with the binary value 10 in A
     3.1 import re
     3.2 'r' at the start of a string literal, also known as a raw string literal, denotes a raw string (no escape interpretations) 
 
+```
 >>> import re
 >>> pattern = r'Hello[ \t]*(.*)world'
 >>> text = 'Hello      Python world'
 >>> match = re.match(pattern, text)
 >>> match.group(1)
-
+```
 
 This example searches for a substring that begins with the word “Hello,” followed by
 zero or more tabs or spaces, followed by arbitrary characters to be saved as a matched
 group, terminated by the word “world.” If such a substring is found, portions of the
 substring matched by parts of the pattern enclosed in parentheses are available as groups
 
->>> match = re.match('/(.*)/(.*)/(.*)', '/usr/home/docs')
+```
+match = re.match('/(.*)/(.*)/(.*)', '/usr/home/docs')
 >>> match.groups()
+```
