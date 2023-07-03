@@ -8,7 +8,7 @@ print('span length is ' + str(len(spam)))
 idx = 0
 print('spam item #' + str(idx) + ' is ' + spam[idx]) 
 idx = 3
-print('spam item #' + str(idx) + ' is ' + spam[idx]) ``
+print('spam item #' + str(idx) + ' is ' + spam[idx])
 
 print(spam[-1]) # By using Python index backwarding we print last item
 print(spam[-2]) # Negative index is added to the string's size so it is same as :
