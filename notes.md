@@ -1,15 +1,6 @@
-Table 4-1. | Built-in objects preview
+1. Python is:
+1) dynamically typed (it keeps track of types for you automatically instead of requiring declaration code)
+2) strongly typed (you can perform on an object only operations that are valid for its type)
 
-Object type     Example literals/creation
--------------------------------------
-Numbers         1234, 3.1415, 3+4j, Decimal, Fraction
-Strings         'spam', "guido's", b'a\x01c'
-Lists           [1, [2, 'three'], 4]
-Dictionaries    {'food': 'spam', 'taste': 'yum'}
-Tuples          (1, 'spam', 4, 'U')
-Files           myfile = open('eggs', 'r')
-Sets            set('abc'), {'a', 'b', 'c'}
-Booleans        True, False, 1, 0
 
-Program unit types                  Functions, modules, classes
-Implementation-related types        Compiled code, stack tracebacks 
+2.  xdg-open Learning_Python.pdf    #Detect the default PDF viewer and open the file with it 
