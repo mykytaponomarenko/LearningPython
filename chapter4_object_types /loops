@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+# for and while are main ways to code repetitive tasks as statements
+
+for c in 'Spam!':
+    print(c.upper())
+
+x = 4
+while x > 0:
+    print('spam' * x)
+    x -= 1
+
+squares = [x ** 2 for x in [1,2,3,4,5]] # list comprehension
+print(squares)
+

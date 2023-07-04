@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+
+# Sets are unordered collection of unique and immutable objects
+
+X = set('spam')         # make a set out of a sequence in 2.6 and 3.0
+Y = {'h','a','m'}       # make a set with new 3.0 set literals
+
+print(X, Y)
+
+print(X & Y)            # Intersection
+print(X | Y)            # Union
+print(X - Y)            # Difference
+print(Y - X)            # Difference
+
+compreh = {x ** 2 for x in [1,2,3,4]}  # Set comprehension
+print(compreh)
+
+
+
+
+
