@@ -44,3 +44,12 @@ substring matched by parts of the pattern enclosed in parentheses are available 
 match = re.match('/(.*)/(.*)/(.*)', '/usr/home/docs')
 >>> match.groups()
 ```
+
+4. Dictionaries only support accessing items by key
+
+5. Both 'comprehension expression' and 'for' follow Iteration Protocol
+
+6. map() and filter() are faster than 'for'
+
+7. Best way to read a file is not read it at all - files provide an iterator that automatically reads line by line in for loops
+

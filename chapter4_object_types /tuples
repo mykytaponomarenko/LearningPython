@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+# Tuples are sequences like lists but they are immutable like strings
+
+T = (1, 2, 3, 4, 4)
+print(len(T))
+# T += (5, 6)
+# print(T)
+# print(T[1])
+
+print(T.index(4)) # shows first appearence of 4 at offset 3
+print(4, 'is present times:', T.count(4)) # shows 4 appearence count
+
+T[0] = 2 # TypeError: tuple is immutable and can't be changed once created
+

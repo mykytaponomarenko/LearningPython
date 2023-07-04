@@ -1,8 +1,9 @@
 0. #!/usr/local/bin/python
 
-1. Python is:
+1. Python:
 a) dynamically typed (it keeps track of types for you automatically instead of requiring declaration code)
 b) strongly typed (you can perform on an object only operations that are valid for its type)
+c) has garbage collection: cleans up unused memory by reclaiming space as soon as the last reference to an object is removed
 
 
 2.  xdg-open   #Detect the default appropriate viewer and open the file with it (bash)
@@ -14,3 +15,7 @@ In general, leading and trailing double underscores is the naming pattern Python
 details. The names without the underscores are the callable methods on particular object.
 
 4. Empty Dir() gives methods' names. Use help() to ask what they do. For example help(dir) or help(spam.replace)
+
+5. Nesting allows to build up complex information structures directly and easily. Use it!
+
+6. After Python 3.0 types are classes and vice versa

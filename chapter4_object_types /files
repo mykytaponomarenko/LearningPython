@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+# Create file with text in it
+f = open('data.txt', 'w') # Make a new file in output mode. File name can be full path
+f.write('Hello\n')        # Write strings of bytes to it
+f.write('world\n')
+f.close()                 # Close to flush output buffers to disk
+
+# Read file. File's content is always a string in script, regardless of the type of file data
+
+f = open('data.txt')      # 'r' is the default processing mode  - read
+text = f.read()           # Read entire file into a string
+print(text)
+
+print(text.split())
+
+print(dir(f)) # see file methods
+help(f.seek)
+
+
