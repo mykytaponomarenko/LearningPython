@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 # Grow & Shrink (Append & Pop)
 L = [1, 'spam', 3.33]
 print('L length is ' + str(len(L)))
@@ -58,3 +60,10 @@ print(diag)
 doubles = [c * 2 for c in 'spam'] # Repats chars in string
 print(doubles)
 
+# Generator from comprehension
+G = (sum(row) for row in M) #creates generator of rows sums
+print(next(G))
+print(next(G)) # runs iteration protocol
+print(next(G)) 
+
+print(list(map(sum, M))) # sums each row and puts sums in list 
