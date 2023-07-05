@@ -19,3 +19,10 @@ details. The names without the underscores are the callable methods on particula
 5. Nesting allows to build up complex information structures directly and easily. Use it!
 
 6. After Python 3.0 types are classes and vice versa
+
+7. Variables:
+• are created when they are first assigned values.
+• are replaced with their values when used in expressions.
+• must be assigned before they can be used in expressions.
+• refer to objects and are never declared ahead of time.
+

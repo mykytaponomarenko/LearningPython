@@ -51,3 +51,28 @@ x.attr                                                                          
 (...)                                                                           Tuple, expression, generator expression
 [...]                                                                           List, list comprehension
 {...}                                                                           Dictionary, set, set and dictionary comprehensions
+
+Mixed operators follow operator precedence
+
+As in most languages, in Python, more complex expressions are coded by stringing
+together the operator expressions in Table 5-2. For instance, the sum of two multipli-
+cations might be written as a mix of variables and operators:
+A * B + C * D
+So, how does Python know which operation to perform first? The answer to this ques-
+tion lies in operator precedence. In expression with more than one
+operator, Python groups its parts according to what are called precedence rules, and
+this grouping determines the order in which the expression’s parts are computed.
+Table 5-2 is ordered by operator precedence:
+• Operators lower in the table have higher precedence, and so bind more tightly in
+mixed expressions.
+• Operators in the same row in Table 5-2 generally group from left to right when
+combined (except for exponentiation, which groups right to left, and comparisons,
+which chain left to right).
+
+!!! Python always evaluates expressions in parentheses first
+before using their results in the enclosing expressions !!!
+
+Example: (X + Y) * Z. X + Y evaluates first
+
+In 3.0+ nonnumeric mixed-type comparisons are not allowed and raise exceptions
+

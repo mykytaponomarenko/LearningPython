@@ -13,3 +13,5 @@ Numbers, strings, and tuples in Python fall into this category
 
 6. Sequence: a positionally ordered collection of objects. 
 Strings, lists, and tuples are all sequences in Python
+
+7. polymorphism: indicating that the meaning of an operation depends on the type of the objects being operated on
