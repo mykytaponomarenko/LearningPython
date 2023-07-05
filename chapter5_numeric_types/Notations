@@ -1,0 +1,24 @@
+#!/usr/bin/env python
+
+print(0o1, 0o20, 0o377)                 # Octal literals
+print(0x1, 0x20, 0xFF)                  # Hex literals
+print(0b1, 0b100010, 0b111111111)       # Binary literals
+
+# Convert to other bases
+
+print(oct(64), hex(64), bin(64))                                                # with functions
+print(int('64'), int('100', 8), int('40', 16), int('1000000', 2))               # string to int with options base argument
+
+# eval() treats strings as they were Python code
+
+print(eval('0o100'), eval('0x40'))
+
+# string formatting method calls
+
+print('{0:o}, {1:x}, {2:b}'.format(64,64,64))
+
+print('%o, %x, %X' % (64,255,255)) 
+
+
+
+

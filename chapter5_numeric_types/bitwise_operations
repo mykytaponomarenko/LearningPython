@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+x = 1                       # 0001
+print(x << 2)               # shifts left 2 bits -> 0100
+print(x | 2)
+print(x % 1)
