@@ -33,3 +33,11 @@ print(Decimal(str(f)) + Decimal(str(f)) + Decimal(str(f)) - Decimal('0.30'))    
 print(Decimal(1) / Decimal(7))
 decimal.getcontext().prec = 4                                                   # Set global decimal precision  to 4 
 print(Decimal(1) / Decimal(7))
+
+from fractions import Fraction
+x = Fraction(1, 3)
+y = Fraction(4, 6)
+
+print(x, y, x + y, Fraction('.25'))
+print((2.5).as_integer_ratio(), Fraction.from_float(1.75))         
+

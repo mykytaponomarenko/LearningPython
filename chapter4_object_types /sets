@@ -15,7 +15,13 @@ print(Y - X)            # Difference
 compreh = {x ** 2 for x in [1,2,3,4]}  # Set comprehension
 print(compreh)
 
+# Remove duplicates from list
 
+L = [1,2,2,3,4,5,6,6,7]
+print(L)
+print(set(L))
+L = list(set(L))
+print(L)
 
 
 
