@@ -1,0 +1,18 @@
+#!/usr/bin/env python
+
+L = [1,2,3]
+M = L
+print( L == M, M == L)
+
+# the == operator, tests whether the two referenced objects have the same values
+
+Z = [1,2,3]
+
+print (L == Z, L is Z, L is M)
+
+# 'is' compares pointers
+
+x = 42
+y = 42
+
+print(x == y, x is y)       # numbers are small, located in system table, so x and y are pointers to same object

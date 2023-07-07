@@ -26,3 +26,12 @@ details. The names without the underscores are the callable methods on particula
 • must be assigned before they can be used in expressions.
 • refer to objects and are never declared ahead of time.
 
+8. Check current Python implementation:
+```
+>>> import platform
+>>> print(platform.python_implementation())
+```
+
+9. gc module is for garbage collection management 
+Read more: https://stackify.com/python-garbage-collection/#:~:text=Reference%20counting%20in%20CPython&text=At%20a%20very%20basic%20level,for%20the%20object%20is%20deallocated
+
