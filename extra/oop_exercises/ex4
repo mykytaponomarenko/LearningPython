@@ -1,0 +1,42 @@
+#!/usr/bin/env python
+
+'''
+Given:
+
+Create a Bus class that inherits from the Vehicle class. 
+Give the capacity argument of Bus.seating_capacity() a default value of 50.
+
+Expected Output:
+The seating capacity of a bus is 50 passengers
+
+Use the following code for your parent Vehicle class:
+'''
+
+class Vehicle:
+    def __init__(self, name, max_speed, mileage):
+        self.name = name
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+    def seating_capacity(self, capacity):
+        return f"The seating capacity of a {self.name} is {capacity} passengers"
+
+
+# My code:
+
+class Bus(Vehicle):
+    def seating_capacity(self, capacity = 50):
+        return super().seating_capacity(capacity)
+
+myBus = Bus('bus', 100, 110)
+
+print(myBus.seating_capacity())
+print(myBus.__dict__)
+
+
+# extra test 
+    
+myVehicle = Vehicle('tavria', 666, -1)
+
+print(myVehicle.seating_capacity(9))
+print(myVehicle.__dict__)

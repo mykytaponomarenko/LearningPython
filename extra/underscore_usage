@@ -1,0 +1,87 @@
+#!/usr/bin/env python
+
+'''
+1. _ as a Temporary Variable
+
+_ can be used in place of a “dummy” variable both in  loops and assignment statements 
+where a function returns multiple values, and you want to ignore one or more of them.
+
+# 1.1 In loops
+
+
+# instead of 
+
+for dummy in range(5):
+    print("Hello World")
+
+# better use
+
+for _ in range(5):
+    print("Hello World")
+
+# _ can be used as variable
+
+for _ in range(5):
+    print(_)
+
+
+for _ in ['A','B','C']:
+    print(_, end=": ")     # 'end' specifies that ':' will be printed at the end of the print() instead of the default \n
+    for _ in range(4):
+        print(_, end=",")  # 'end' specifies that ',' will be printed at the end of the print() instead of \n
+    print()                
+
+for _ in ['A','B','C']:
+    pass                           # pass is a placeholder statement that does nothing
+    for _ in range(4):
+        pass
+print(_)                           # result is 3 as this is last value which was assigned to _           
+
+# Ignoring a returned value
+
+def my_function(data):
+    not_needed1 = data * 10
+
+    not_needed2 = data * 20
+
+    useful_data = data
+
+    return (not_needed1, not_needed2, useful_data)
+
+_, _, useful_data = my_function(100)            # one of the three values to be used, others are not needed
+print('value:', useful_data, '_ value', _)      # _ value is 2000
+
+2. _ To Indicate Class Properties Are Private
+
+
+class MyClass:
+    def __init__(self):
+        self._myprivate = 12
+        self.__myreallyprivate = 42
+
+instance = MyClass()
+print(dir(instance))                    # we can see that attributes are not really private
+
+
+# But __ comes in handy when you create child classes with the same local variable names
+
+class Parent:
+    def __init__(self):
+        self.__private = 42
+        
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        self.__private = 52
+
+mychild = Child()
+print(mychild._Parent__private)   # prints 42
+print(mychild._Child__private)    # prints 52
+
+
+# 3. _ to indicate Functions are Private. Avoid importing a function that has been marked as private. 
+
+'''
+
+
+
