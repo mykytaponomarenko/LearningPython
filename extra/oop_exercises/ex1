@@ -1,0 +1,15 @@
+#!/usr/bin/env python
+
+# Task: create a class with instance attributes
+# Write a Python program to create a Vehicle class with max_speed and mileage instance attributes
+
+class Vehicle:
+    def __init__(self, max_speed, mileage):
+    # instance attributes
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+
+myVehicle = Vehicle(220, 0)
+
+print('My Vehicle goes up to', myVehicle.max_speed, 'km/h. And it is brand new with', myVehicle.mileage, 'mileage')

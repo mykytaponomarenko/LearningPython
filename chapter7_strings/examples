@@ -1,0 +1,55 @@
+#!/usr/bin/env python
+
+'''
+# using 'in'
+myjob = "hacker"
+
+for c in myjob: print(c, end=' ')
+
+print('k' in myjob) # output is written on the same line as ^
+
+print('z' in myjob)
+
+S = 'spam'
+
+# indexing
+print(S[0], S[-2])
+
+# slicing
+print(S[1:3], S[1:], S[:-1]) # note that last symbol is noninclusive
+print(S[:])                  # full top-level copy of S object
+
+
+# extended slicing
+#the full-blown form of a slice is X[I:J:K], which means “extract all the
+#items in X, from offset I through J-1, by K.” The third limit, K, defaults to 1
+
+S = 'abcdefghijklmnopqrstuvwxyz'
+
+print(S[1:10:2])            # bdfhj
+print(S[::4])               # aeimquy
+
+# reverse the string
+g = "Hello"
+print(g[::-1])              # olleH
+
+# With a negative stride, the meanings of the first two bounds are essentially reversed.
+# That is, the slice S[5:1:−1] fetches the items from 2 to 5, in reverse order (the result
+# contains items from offsets 5, 4, 3, and 2):
+
+S = 'abcdefghijklmnopq'
+print(S[1:5])
+print(S[5:1:-1])            # fedc
+
+'''
+
+
+import sys
+print(sys.argv)
+
+print(sys.argv[1:])
+
+# [aftermellon@aftermellon chapter7_strings]$ python examples -a -b -c
+# ['examples', '-a', '-b', '-c']
+
+

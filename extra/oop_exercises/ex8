@@ -1,0 +1,20 @@
+#!/usr/bin/env python
+
+# Determine if School_bus is also an instance of the Vehicle class
+# Given:
+
+class Vehicle:
+    def __init__(self, name, mileage, capacity):
+        self.name = name
+        self.mileage = mileage
+        self.capacity = capacity
+
+class Bus(Vehicle):
+    pass
+
+School_bus = Bus("School Volvo", 12, 50)
+
+if isinstance(School_bus, Vehicle):
+    print("School bus is an instance of Vehicle class")
+else:
+    print("School bus is NOT an instance of Vehicle class")

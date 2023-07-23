@@ -1,0 +1,7 @@
+#!/usr/bin/env python
+
+# Task: create a Vehicle class without any variables and methods
+
+class Vehicle:
+    pass
+
